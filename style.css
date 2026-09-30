@@ -1,0 +1,175 @@
+:root {
+    /* You MUST declare this for light-dark() to work */
+    color-scheme: light dark; 
+    
+    /* Define variables using light-dark(light_value, dark_value) */
+    --bg-color: light-dark(#ffffff, #121212);
+    --text-color: light-dark(#1a1a1a, #f0f0f0);
+
+    --nav-color: light-dark(#737373, #232124);
+    --navText-color: light-dark(#1a1a1a, #f0f0f0);
+}
+
+body {
+    margin: 0;
+    font-size: 15px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    font-size: 25px;
+    padding: 0px;
+}
+
+p, h1 {
+    margin: 0px;
+    padding: 0px;
+}
+
+p, h2 {
+    margin: 0px;
+    padding: 7px;
+}
+
+.content {
+    margin: 20px;
+}
+
+.bigButton {
+    background-color: #c2e1ff;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 20px 0px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.bigButton:hover {
+    background-color: #E9B4C1;
+}
+
+.archiButton {
+    background-color: #444D69;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 0px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.archiButton:hover {
+    background-color: #EAD0C8;
+}
+
+.image-container1 {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.image-container2 {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.image-container3 {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    column-gap: 70px;
+    row-gap: 20px;
+}
+
+.container div {
+    background-color: #f1f1f1;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    padding: 10px;
+    column-gap: 70px;
+    row-gap: 20px;
+    overflow: hidden;
+}
+
+.container2 div {
+    background-color: #f1f1f1;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.writingContainer {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    column-gap: 70px;
+    padding-top: 0px;
+    margin-top: -1px;
+}
+
+.writingContainer div {
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+nav {
+    background-color: var(--nav-color);
+    color: var(--navText-color);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+nav div {
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: var(--nav-color);
+    color: var(--navText-color);
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav a:hover {
+    color: black;
+    background-color: #AFC0D4;
+}
+
+.footer {
+    margin: 0px;
+    position: fixed;
+}
